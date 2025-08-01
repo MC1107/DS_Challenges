@@ -1,0 +1,14 @@
+{
+  "name": "ds-challenges-interface",
+  "version": "1.0.0",
+  "description": "UX/UI Interface for Data Science Challenges - Conversion Rate and A/B Testing",
+  "scripts": {
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
+    "frontend": "cd frontend && npm start",
+    "backend": "cd backend && python app.py",
+    "install-all": "cd frontend && npm install && cd ../backend && pip install -r requirements.txt"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
